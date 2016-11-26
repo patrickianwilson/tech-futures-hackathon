@@ -23,4 +23,4 @@ The Projects folder is intended to contain proof of concept projects that evolve
 
 ## Collaborators
 
-  - Patrick Wilson: [patrickianwilson|https://github.com/patrickianwilson]
+  - Patrick Wilson: [patrickianwilson](https://github.com/patrickianwilson)
