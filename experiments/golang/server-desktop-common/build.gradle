@@ -1,0 +1,6 @@
+ext {
+	mainPackage = "github.com/patrickianwilson/hello"
+    args = ["arg1", "arg2"]
+}
+
+apply from: "$rootProject.projectDir/config/gradle/golang/go-conventions.gradle"

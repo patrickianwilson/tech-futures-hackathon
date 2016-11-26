@@ -1,0 +1,7 @@
+CMakeFiles/
+*.a
+*.dynlib
+cmake-build-debug
+.idea
+
+*.cbp

@@ -1,0 +1,41 @@
+/*
+
+This convention plugin requires the following ext {} block on the project applying the plugin:
+
+ext {
+	mainPackage="" //the golang "main" package that should be built
+	
+}
+*/
+
+
+task assembleGo (type: Exec) {
+
+        workingDir "$projectDir"
+        commandLine 'go', 'build', project.mainPackage
+
+        inputs.dir "$projectDir/src/"
+        outputs.dir "$projectDir/pkg"
+        outputs.dir "$projectDir/bin"
+
+        def executableName = project.mainPackage.substring(project.mainPackage.lastIndexOf("/"))
+        logger.info("Assuming executable name: $executableName")
+        outputs.file "$projectDir/$executableName"
+
+}
+
+task runGo (type: Exec, dependsOn: assembleGo) {
+    workingDir "$projectDir"
+    def executableName = [".${project.mainPackage.substring(project.mainPackage.lastIndexOf("/"))}"]
+
+    if (project.ext.args != null) {
+        project.ext.args.each {
+            arg-> executableName << arg
+        }
+    }
+
+    commandLine executableName
+
+
+}
+
