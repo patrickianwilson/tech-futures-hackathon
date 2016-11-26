@@ -5,7 +5,7 @@
 
 ## Issue References
 
-  - #1
+  - [#1](/../../issues/1)
  
 ## Build Instructions
 
