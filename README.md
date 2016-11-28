@@ -14,6 +14,9 @@ Basically, the following items are pretty safe bets for technologies and paradig
   	- Not sure where the space is going to end up...  Both have pros and cons.
   - Golang for Server Containers and Desktop Applications
   	- Golang has real promise to evolve into a replacement for Java on Server systems.  I could also eventually be a compelling choice for writing native desktop apps.
+  - IoT.
+    - I personally see a future where many little "micro 'things'" start to become more UX centric.  For instance, if you are in a VR world, how can you interact?  Voice, maybe.  But I would wager there is a place for little whereable gyroscopes on the wrists and feet to convey motion and sensory info.
+    - Smart homes and devices are also going to grow - though I think at less of a rate than currently seen.
 
 ##Repository Structure
 
